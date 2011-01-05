@@ -5,3 +5,5 @@ I just added this line with IDEA. Let's see if we can now commit this new versio
 Yippie ya yeey!! This just workt, a local commit from IntelliJ!
 
 Now let's try a "commit and push"!! :)
+
+Push did not work it seems :( :(
