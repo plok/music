@@ -1,1 +1,3 @@
 !! GIT TEST FROM WINDOWS !!
+
+I just added this line with IDEA. Let's see if we can now commit this new version into the LOCAL Git repository.
