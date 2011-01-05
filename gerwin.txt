@@ -13,3 +13,5 @@ Ok, a push only did wok fine now! :D
 I now had to give my key phrase. Added it to the password repo so I do not need to keep giving it.
 
  Let's try a "commit - push" again.....
+
+ Ok, commit and push at the same ime does not seem to work. Well, no problem, this is not the way to go with Git anyway.. :)
