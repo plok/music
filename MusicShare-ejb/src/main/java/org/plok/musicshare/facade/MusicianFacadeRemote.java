@@ -5,29 +5,30 @@
 
 package org.plok.musicshare.facade;
 
-import java.util.List;
 import javax.ejb.Remote;
+import java.util.List;
+
 import org.plok.musicshare.model.Musician;
 
 /**
- *
  * @author jorrit
  */
 @Remote
-public interface MusicianFacadeRemote {
+public interface MusicianFacadeRemote
+{
 
-    void create(Musician musician);
+	void create(Musician musician);
 
-    void edit(Musician musician);
+	void edit(Musician musician);
 
-    void remove(Musician musician);
+	void remove(Musician musician);
 
-    Musician find(Object id);
+	Musician find(Object id);
 
-    List<Musician> findAll();
+	List<Musician> findAll();
 
-    List<Musician> findRange(int[] range);
+	List<Musician> findRange(int[] range);
 
-    int count();
+	int count();
 
 }

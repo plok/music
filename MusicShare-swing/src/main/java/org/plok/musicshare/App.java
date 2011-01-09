@@ -1,10 +1,10 @@
 package org.plok.musicshare;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
 import javax.ejb.EJB;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
 
 import org.plok.musicshare.facade.MusicianFacadeRemote;
 
