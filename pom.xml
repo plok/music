@@ -12,6 +12,5 @@
 		<module>MusicShare-web</module>
 		<module>MusicShare-ejb</module>
 		<module>MusicShare-swing</module>
-		<module>speeltuin</module>
 	</modules>
 </project>
