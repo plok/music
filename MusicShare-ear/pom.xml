@@ -37,7 +37,15 @@
 				<version>2.4.2</version>
 				<configuration>
 					<version>6</version>
-					<defaultLibBundleDir>lib</defaultLibBundleDir>
+          				<modules>
+						<jarModule>
+							<groupId>org.plok</groupId>
+							<artifactId>MusicShare-swing</artifactId>
+							<classifier>jar-with-dependencies</classifier>
+							<includeInApplicationXml>true</includeInApplicationXml>
+						</jarModule>
+					</modules>
+				
 				</configuration>
 
 			</plugin>
@@ -46,13 +54,25 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.mycompany</groupId>
+			<groupId>org.plok</groupId>
+			<artifactId>MusicShare-ejb</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<type>ejb-client</type>
+		</dependency>
+		<dependency>
+			<groupId>org.plok</groupId>
 			<artifactId>MusicShare-ejb</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<type>ejb</type>
 		</dependency>
 		<dependency>
-			<groupId>com.mycompany</groupId>
+			<groupId>org.plok</groupId>
+			<artifactId>MusicShare-swing</artifactId>
+			<version>1.0-SNAPSHOT</version>
+							<classifier>jar-with-dependencies</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.plok</groupId>
 			<artifactId>MusicShare-web</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<type>war</type>
