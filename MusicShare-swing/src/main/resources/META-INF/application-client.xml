@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application-client>
+  	<display-name>musicshare</display-name>
+	<context-root>musicshare</context-root>
+	<vendor>MyCorp, Inc.</vendor>
+</application-client>
