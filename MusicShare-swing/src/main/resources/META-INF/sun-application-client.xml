@@ -1,0 +1,4 @@
+<sun-application-client>
+ 	<context-root>music</context-root>
+	<vendor>plok.org</vendor>
+</sun-application-client>
