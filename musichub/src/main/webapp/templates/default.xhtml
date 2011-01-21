@@ -1,8 +1,128 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://java.sun.com/jsf/html"
-   xmlns:ui="http://java.sun.com/jsf/facelets">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
 
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>
+            <ui:insert name="title" >
+                Musicshare!
+            </ui:insert>
+        </title>
+
+        <h:outputStylesheet library="css/yaml/core" name="base.css" />
+        <h:outputStylesheet library="css" name="basemod_grids.css" />
+        <h:outputStylesheet library="css" name="content.css" />
+        <h:outputStylesheet library="css/yaml/navigation" name="nav_shinybuttons.css" />
+    </h:head>
+    <h:body>
+        <!-- skip link navigation -->
+        <ul id="skiplinks">
+            <li><a class="skip" href="#nav">Skip to navigation (Press Enter).</a></li>
+            <li><a class="skip" href="#main" >Skip to main content (Press Enter).</a></li>
+        </ul>
+
+        <div id="topnav" role="contentinfo">
+            <div class="page_margins">
+                <div class="page">
+                    Hit tab for menu
+                </div>
+            </div>
+        </div>
+
+        <div id="header" role="banner">
+            <div class="page_margins">
+                <div class="page">
+                    <div>
+                        <h:graphicImage library="img" name="musichub_logo.png" />
+                    </div>
+                    <h3>Hub for musicians...</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="main">
+            <div class="page_margins">
+                <div class="page">
+                    <div class="subcolumns">
+                        <div class="c75l">
+                            <div class="subcl">
+
+                                <h2>
+                                    <ui:insert name="mainContentTitle">???title???</ui:insert>
+                                </h2>
+                                <p class="floatbox">
+                                    <ui:insert name="mainContent">
+                                        ???content???
+                                    </ui:insert>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="c25r">
+                            <div class="subcr">
+                                <div class="info">
+                                    <h3>
+                                        <ui:insert name="rightContentTitle">
+                                            ???title???
+                                        </ui:insert>
+                                    </h3>
+                                    <p class="floatbox">
+                                        <ui:insert name="rightContent">
+                                            ???content???
+                                        </ui:insert>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="extended">
+            <div class="page_margins">
+                <div class="page">
+                    <div class="subcolumns equalize">
+                        <div class="c50l">
+                            <div class="subcl">
+                                <h4>Quick links:</h4>
+                                <ul>
+                                    <li>
+                                        <a href="http://www.nu.nl" >nul.nl</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="c25l">
+                            <div class="subc">
+                                <!-- Insert your subtemplate content here -->
+                            </div>
+                        </div>
+                        <div class="c25r">
+                            <div class="subcr">
+                                <!-- Insert your subtemplate content here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- begin: #footer -->
+        <div id="footer" role="contentinfo">
+            <div class="page_margins">
+                <div class="page">
+                    <p>© Copyright 2011 plok.org<br />
+                        <a href="http://www.yaml.de/">YAML</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- full skiplink functionality in webkit browsers -->
+        <script src="../../yaml/core/js/yaml-focusfix.js" type="text/javascript"></script>
+    </h:body>
 </html>

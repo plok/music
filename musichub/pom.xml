@@ -8,12 +8,12 @@
     <packaging>war</packaging>
 
     <name>Musichub Web App</name>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <dependencies>
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>2.1</version>
+        </dependency>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
@@ -51,5 +51,12 @@
         </plugins>
         <finalName>musichub</finalName>
     </build>
-
+    <repositories>
+        <repository>
+            <url>http://repository.prime.com.tr</url>
+            <id>primefaces</id>
+            <layout>default</layout>
+            <name>Repository for library Library[primefaces]</name>
+        </repository>
+    </repositories>
 </project>
