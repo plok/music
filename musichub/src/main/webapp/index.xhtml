@@ -1,7 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                template="/templates/default.xhtml"
-                xmlns:h="http://java.sun.com/jsf/html">
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/resources/templates/default.xhtml"
+
+                xmlns:components="http://java.sun.com/jsf/composite/components">
 
     <ui:define name="mainContentTitle">
         A new service for all musicians...
@@ -10,7 +15,26 @@
     <ui:define name="mainContent">
         <h:graphicImage library="img" name="tape_recorder.png" alt="tape" styleClass="float_left"/>
         Musichub contains reviews, stories and applications for everyone who is interested in music.
+
+
+        <form method="POST" action="j_security_check" class="yform">
+         
+                User name:<input type="text" name="j_username" />
+                Password:<input type="password" name="j_password" />
+               <input type="submit" value="Login" />
+           
+        </form>
     </ui:define>
 
+    <ui:define name="rightContentTitle" >
+        Register!
+    </ui:define>
+    <ui:define name="rightContent">
+        <components:createUserForm/>
+        <ui:repeat value="#{musicianBean.musicians}" var="var">
+            <h:outputText value="#{var.userName}" />
+        </ui:repeat>
+
+    </ui:define>
 
 </ui:composition>
