@@ -68,6 +68,7 @@ public class CreateUserBean {
 
         LoginGroup loginGroup = new LoginGroup();
         loginGroup.setGroupname("default");
+        
         loginGroup.setUsername(userName);
 
         musician.setUserName(userName);

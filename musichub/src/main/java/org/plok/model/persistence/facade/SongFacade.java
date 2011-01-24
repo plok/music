@@ -1,28 +1,24 @@
 package org.plok.model.persistence.facade;
 
-import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import org.plok.model.persistence.auth.Login;
+import org.plok.model.persistence.Song;
 
 /**
- * 
+ *
  * @author plok
  */
-@Stateless
-public class LoginFacade extends AbstractFacade<Login> {
+public class SongFacade extends AbstractFacade<Song> {
 
     @PersistenceContext(unitName = "musichub_pu")
     private EntityManager em;
 
-    public LoginFacade() {
-        super(Login.class);
-        
+    public SongFacade() {
+        super(Song.class);
     }
 
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-
 }
