@@ -26,7 +26,7 @@
     </security-constraint>
     <login-config>
         <auth-method>BASIC</auth-method>
-        <realm-name>jdbcRealm</realm-name>
+        <realm-name>userRealm</realm-name>
     </login-config>
     <security-role>
         <description>all the users that are authenticated</description>
