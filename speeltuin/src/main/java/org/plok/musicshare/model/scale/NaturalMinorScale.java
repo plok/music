@@ -1,6 +1,6 @@
-package org.plok.musicshare.scales;
+package org.plok.musicshare.model.scale;
 
-import org.plok.musicshare.pitches.Pitch;
+import org.plok.musicshare.model.pitch.Pitch;
 
 /**
 * @FIXME Need comment
