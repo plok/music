@@ -1,7 +1,7 @@
 package org.plok.model.persistence.facade;
 
-import java.util.List;
 import javax.persistence.EntityManager;
+import java.util.List;
 
 /**
  * Abstract Facade for standard crud actions using JPA.

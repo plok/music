@@ -4,14 +4,15 @@
  */
 package org.plok.web.beans;
 
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import org.plok.model.persistence.Musician;
 import org.plok.model.persistence.auth.Login;
 import org.plok.model.persistence.auth.LoginGroup;
@@ -68,7 +69,7 @@ public class CreateUserBean {
 
         LoginGroup loginGroup = new LoginGroup();
         loginGroup.setGroupname("default");
-        
+
         loginGroup.setUsername(userName);
 
         musician.setUserName(userName);

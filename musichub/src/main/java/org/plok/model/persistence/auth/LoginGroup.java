@@ -6,6 +6,7 @@
 package org.plok.model.persistence.auth;
 
 import javax.persistence.Entity;
+
 import org.plok.model.persistence.common.AbstractBaseEntity;
 
 /**
@@ -14,7 +15,7 @@ import org.plok.model.persistence.common.AbstractBaseEntity;
  */
 @Entity
 public class LoginGroup extends AbstractBaseEntity{
-    
+
     private String username;
     private String groupname;
 
@@ -33,5 +34,5 @@ public class LoginGroup extends AbstractBaseEntity{
     public void setUsername(String username) {
         this.username = username;
     }
-    
+
 }
