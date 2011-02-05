@@ -3,7 +3,7 @@ package org.plok.musicshare.chordtransposer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.plok.musicshare.tools.ArrayTools;
+import org.plok.tools.ArrayTools;
 
 /**
  * Created by IntelliJ IDEA.

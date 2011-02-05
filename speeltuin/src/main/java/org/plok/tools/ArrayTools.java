@@ -1,4 +1,4 @@
-package org.plok.musicshare.tools;
+package org.plok.tools;
 
 /**
  * @FIXME Need comment
