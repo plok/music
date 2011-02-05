@@ -30,10 +30,14 @@ public class CreateUserBean {
     private LoginFacade loginFacade;
     @EJB
     private LoginGroupFacade loginGroupFacade;
-    @NotNull
+
+    @NotNull(message = "User name is required.")  // TODO: I guess we should use resource bundle keys as messages.
     private String userName;
+
+	@NotNull(message = "Password is required.")  // TODO: I guess we should use resource bundle keys as messages.
     private String password;
-    @Pattern(regexp = ".+@.+\\.[a-z]+")
+
+    @Pattern(regexp = ".+@.+\\.[a-z]+", message = "Not a valid email address.") // TODO: I guess we should use resource bundle keys as messages.
     @NotNull
     private String email;
 

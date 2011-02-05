@@ -1,26 +1,31 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:cc="http://java.sun.com/jsf/composite"
-      xmlns:h="http://java.sun.com/jsf/html">
+	  xmlns:cc="http://java.sun.com/jsf/composite"
+	  xmlns:h="http://java.sun.com/jsf/html">
 
-  <!-- INTERFACE -->
-  <cc:interface>
-  </cc:interface>
+<!-- INTERFACE -->
+<cc:interface>
+</cc:interface>
 
-  <!-- IMPLEMENTATION -->
-  <cc:implementation>
-         <h:form styleClass="yform">
-                <h:outputLabel for="id_username" value="username:" />
+<!-- IMPLEMENTATION -->
+<cc:implementation>
+	<h:form styleClass="yform">
+		<h:outputLabel for="id_username" value="username:"/>
+		<h:inputText id="id_username" value="#{createUserBean.userName}" required="true"/>
+		<h:message for="id_username" styleClass="warning" style="display:block; margin-top: 5px;"/>
 
-                <h:inputText id="id_username" value="#{createUserBean.userName}"/>
-                <h:outputLabel for="id_email" value="email:" />
-                <h:inputText id="id_email" value="#{createUserBean.email}"/>
-                <h:outputLabel for="id_pass" value="password:" />
-                <h:inputText id="id_pass" value="#{createUserBean.password}"/>
+		<h:outputLabel for="id_email" value="email:"/>
+		<h:inputText id="id_email" value="#{createUserBean.email}"/>
+		<h:message for="id_email" styleClass="warning" style="display:block; margin-top: 5px;"/>
 
-                <h:commandButton action="#{createUserBean.doCreate}" value="Create" />
-        </h:form>
+		<h:outputLabel for="id_pass" value="password:"/>
+		<h:inputText id="id_pass" value="#{createUserBean.password}" required="true"/>
+		<h:message for="id_pass" styleClass="warning" style="display:block; margin-top: 5px;"/>
 
-  </cc:implementation>
+		<h:commandButton action="#{createUserBean.doCreate}" value="Create"/>
+	</h:form>
+
+</cc:implementation>
 </html>
