@@ -80,7 +80,6 @@ public class Pitch
 		return "Pitch{" +
 				"name=" + name +
 				", accidental=" + accidental +
-				", alias=" + alias +
 				'}';
 	}
 
