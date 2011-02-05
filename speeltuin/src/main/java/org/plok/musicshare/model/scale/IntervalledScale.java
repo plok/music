@@ -32,7 +32,7 @@ public abstract class IntervalledScale
 		return scale.get( 0 );
 	}
 
-	public Iterator iterator()
+	public Iterator<Pitch> iterator()
 	{
 		return scale.iterator();
 	}
